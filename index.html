@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+  In this file:
+  - You CAN edit the <body> structure and contents.
+  - You CAN change the current tags and their order inside the <body>.
+  - You CAN add new tags, ids and classes or wrap the existing ones inside the <body>.
+  BUT:
+  - You CANNOT edit the <head>.
+  - You CANNOT add additional external references (libraries, frameworks, etc.), this is going to be automatically tested.
+  - You CANNOT add javascript code or additional stylesheets. The test only copies your index.html and style.css files.
+  - You CANNOT remove template tags (variables between {}). The test may change the content of these.
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magnet Frontend Test</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <script src="site.js"></script>
+</head>
+
+<body>
+  <style>
+    h1 {
+      font-weight: lighter;
+      margin: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      font-size: 15px;
+      font-weight: bold;
+      overflow: hidden;
+      background-color: #20d397;
+      color: white;
+      height: 30px;
+
+    }
+
+    li {
+      float: right;
+    }
+
+    p {
+      margin: 15px;
+    }
+
+    li a {
+      color: white;
+      display: block;
+      padding: 8px;
+    }
+
+    .center {
+      text-align: center;
+      background-color: #8a2be2;
+      border-width: 15px;
+      padding: 10px;
+      margin: 20px;
+      color: rgba(255, 255, 255, 0.8)
+    }
+
+    .image {
+      width: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      justify-content: space-around;
+      grid-template-columns: 30% 30% 30%;
+      /*Make the grid smaller than the container*/
+      gap: 10px;
+    }
+
+    .content1 {
+      border: 0.9px solid;
+      padding: 10px;
+      width: 60%;
+      box-shadow: 3px 3px #dddddd;
+      border-color: #dddddd
+    }
+
+    .content2 {
+      border: 0.9px solid;
+      padding: 10px;
+      width: 20%;
+      box-shadow: 3px 3px #dddddd;
+      border-color: #dddddd
+    }
+
+    .content3 {
+      border: 3px solid;
+      padding: 10px;
+      box-shadow: 3px 3px #dddddd;
+      width: 20%;
+      border-color: #dddddd
+    }
+
+    .grid-container>div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      width: 300px;
+      text-align: left;
+    }
+
+
+    @media (max-width: 960px) {
+      .grid-container {
+        grid-template-columns: 100%;
+      }
+
+      .grid-container>div {
+        width: 100%;
+      }
+    }
+  </style>
+  <ul>
+    <img class="image" src="img/logo.png">
+    Dogos
+  </ul>
+  {navlinks}
+  <h1>{title}</h1>
+  <div class="grid-container" style="padding:15px;text-align:center;">
+    <div class="content1">
+      {content1}
+      <div class="center">
+        <a><img src="img/paw.png">Learn more</a>
+      </div>
+    </div>
+    <div class="content2">
+      {content2}
+      <div class="center">
+        <a><img src="img/paw.png">Learn more</a>
+      </div>
+    </div>
+    <div class="content3">
+      {content3}
+      <div class="center">
+        <a><img src="img/paw.png">Learn more</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "magnet-frontend-test-1",
+  "version": "1.0.0",
+  "description": "This technical test requires you to implement a HTML and CSS page based on a reference design.",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://interviews.magnet.cl/kevin_montero/magnet-frontend-test.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
